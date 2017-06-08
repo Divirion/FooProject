@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_light"
+    android:id="@+id/borneToFight">
+
+    <View
+        android:id="@+id/stone"
+        android:layout_width="@dimen/stone_width"
+        android:layout_height="@dimen/stone_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="2dp"
+        android:background="@color/accent"/>
+
+    <TextView
+        android:id="@+id/cardup1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintBottom_toTopOf="@id/stone"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        android:background="@drawable/card_shape"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+    <TextView
+        android:id="@+id/cardup2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:background="@drawable/card_shape"
+        app:layout_constraintBottom_toTopOf="@id/cardup1"
+        android:layout_marginBottom="@dimen/card_margin"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+    <TextView
+        android:id="@+id/cardup3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:background="@drawable/card_shape"
+        app:layout_constraintBottom_toTopOf="@id/cardup2"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+    <TextView
+        android:id="@+id/carddown1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:background="@drawable/card_shape"
+        app:layout_constraintTop_toBottomOf="@id/stone"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+    <TextView
+        android:id="@+id/carddown2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:background="@drawable/card_shape"
+        app:layout_constraintTop_toBottomOf="@id/carddown1"
+        android:layout_marginTop="@dimen/card_margin"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+    <TextView
+        android:id="@+id/carddown3"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:background="@drawable/card_shape"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/card_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/stone"
+        app:layout_constraintRight_toRightOf="@id/stone"
+        app:layout_constraintTop_toBottomOf="@id/carddown2"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/card_text_size"/>
+
+
+</android.support.constraint.ConstraintLayout>
